@@ -18,6 +18,9 @@
 
 ## 集成
 
+
+[![](https://jitpack.io/v/OneZeroYang/EditImage.svg)](https://jitpack.io/#OneZeroYang/EditImage)
+
 ##### 1. 权限
 <uses-permission android:name="android.permission.READ_CALENDAR" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -76,12 +79,12 @@ allprojects {
 
 ##### 3. 在`app`目录下`build.gradle`文件中添加
 
-implementation 'com.github.OneZeroYang:EasyAccessibility:1.1.0'
+implementation 'com.github.OneZeroYang:EditImage:Tag'
 
 如下:
 ````
 dependencies {
-	        implementation 'com.github.OneZeroYang:EasyAccessibility:1.1.0'
+	        implementation 'com.github.OneZeroYang:EditImage:1.1.0'
 	}
 ````
 
