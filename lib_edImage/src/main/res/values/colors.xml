@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="image_color_white">#FFFFFF</color>
+    <color name="image_color_black">#000000</color>
+    <color name="image_color_purple">#8C06FF</color>
+    <color name="image_color_red">#FF5151</color>
+    <color name="image_color_cyan">#199BFF</color>
+    <color name="image_color_yellow">#FFCC00</color>
+    <color name="image_color_blue">#0078FF</color>
+    <color name="image_color_green">#14E213</color>
+
+    <color name="title_font_color_right">#ff007efa</color>
+    <color name="title_font_color_left">#ffffff</color>
+    <color name="ed_image_title_bar_bg_color">#242425</color>
+    <color name="app_background">#FFF4F5F8</color>
+
+
+    <color name="image_text_dialog_botton_color_bg">#CDD0D6</color>
+</resources>

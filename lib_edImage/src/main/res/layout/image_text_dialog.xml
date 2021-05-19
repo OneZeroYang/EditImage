@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/et_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="top"
+            android:padding="20dp"
+            android:textColor="@color/image_color_primary"
+            android:textSize="24dp"
+            tools:text="这里添加文字" />
+
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/image_color_black"
+            android:gravity="top"
+            android:hint="这里添加文字"
+            android:padding="20dp"
+            android:textColor="@color/image_color_primary"
+            android:textSize="24dp">
+
+        </TextView>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:background="@color/ed_image_title_bar_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <include layout="@layout/image_color_layout" />
+
+        <ImageView
+            android:id="@+id/image_is_ed_prospect"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/btn_ed_texts" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="@color/image_text_dialog_botton_color_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/image_cancel"
+            android:textColor="@color/COLOR_CORNER"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/image_empty"
+            android:textColor="@color/COLOR_CORNER"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:id="@+id/tv_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|end"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/image_done"
+            android:textColor="@color/COLOR_CORNER"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

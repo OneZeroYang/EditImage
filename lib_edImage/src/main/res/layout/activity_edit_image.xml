@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="clipViewModel"
+            type="com.zero_code.libEdImage.model.ClipViewModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.EditImageActivity">
+
+
+        <com.zero_code.libEdImage.EditImageView
+            android:id="@+id/mIMGView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/button_view"
+            android:layout_below="@id/title_view"
+            android:background="#000" />
+
+
+        <View
+            android:id="@+id/status_bar"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <RelativeLayout
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/status_bar"
+            android:background="@color/ed_image_title_bar_bg_color"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            >
+
+            <TextView
+                android:onClick="cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/image_cancel"
+                android:textColor="@color/title_font_color_left"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:onClick="complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/image_done"
+                android:textColor="@color/title_font_color_right"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+
+            android:id="@+id/button_view"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/ed_image_title_bar_bg_color"
+           >
+
+
+            <include layout="@layout/image_color_layout" />
+
+            <include
+                layout="@layout/image_mosaic_layout" />
+
+
+
+            <include
+                layout="@layout/image_arrows_layout"/>
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/edit_image_param_list"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/clip_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:onClick="@{clipViewModel.rotateLeft}"
+                        android:id="@+id/ed_image_rotate_left"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@mipmap/btn_ed_left" />
+
+                    <ImageView
+                        android:onClick="@{clipViewModel.rotateRight}"
+                        android:id="@+id/ed_image_rotate_right"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@mipmap/btn_ed_right" />
+
+                    <ImageView
+                        android:onClick="@{clipViewModel.mirrorUp}"
+                        android:id="@+id/ed_image_mirror_up"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@mipmap/btn_ed_plumb" />
+
+                    <ImageView
+                        android:onClick="@{clipViewModel.mirrorLeft}"
+                        android:id="@+id/ed_image_mirror_left"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@mipmap/btn_ed_level" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:onClick="@{clipViewModel.close}"
+                    android:id="@+id/btn_ed_close"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:src="@mipmap/btn_ed_close" />
+
+
+                <TextView
+                    android:onClick="@{clipViewModel.restore}"
+                    android:id="@+id/ed_tv_restore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/ed_image_text_restore"
+                    android:textColor="@color/image_color_white"
+                    android:textSize="16dp" />
+
+
+                <ImageView
+                    android:onClick="@{clipViewModel.ok}"
+                    android:id="@+id/btn_ed_ok"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:src="@mipmap/btn_ed_ok" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/ed_tools"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/edit_image_tools_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/edit_image_last_step" />
+
+                <ImageView
+                    android:id="@+id/edit_image_last_step"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="6.5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/btn_ed_undo" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>

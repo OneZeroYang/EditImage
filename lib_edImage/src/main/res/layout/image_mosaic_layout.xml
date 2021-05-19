@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zero_code.libEdImage.view.EditMosaicGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cg_mosaic"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="32dp"
+    android:checkedButton="@+id/cr_white"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="4dp"
+    android:visibility="gone">
+
+    <com.zero_code.libEdImage.view.EditMosaicRadio
+
+        android:layout_width="@dimen/image_color"
+        android:layout_height="@dimen/image_color"
+        android:layout_margin="@dimen/image_color_margin"
+        app:image_color="@color/image_color_white"
+        app:image_selected_size="0.3"
+        app:image_unselected_size="0.2" />
+
+    <com.zero_code.libEdImage.view.EditMosaicRadio
+        android:layout_width="@dimen/image_color"
+        android:layout_height="@dimen/image_color"
+        android:layout_margin="@dimen/image_color_margin"
+        app:image_color="@color/image_color_white"
+        app:image_selected_size="0.4"
+        app:image_unselected_size="0.3" />
+
+    <com.zero_code.libEdImage.view.EditMosaicRadio
+        android:layout_width="@dimen/image_color"
+        android:layout_height="@dimen/image_color"
+        android:layout_margin="@dimen/image_color_margin"
+        app:image_color="@color/image_color_white"
+        app:image_selected_size="0.5"
+        app:image_unselected_size="0.4" />
+
+    <com.zero_code.libEdImage.view.EditMosaicRadio
+        android:layout_width="@dimen/image_color"
+        android:layout_height="@dimen/image_color"
+        android:layout_margin="@dimen/image_color_margin"
+        app:image_color="@color/image_color_white"
+        app:image_selected_size="0.6"
+        app:image_unselected_size="0.5" />
+
+    <com.zero_code.libEdImage.view.EditMosaicRadio
+        android:layout_width="@dimen/image_color"
+        android:layout_height="@dimen/image_color"
+        android:layout_margin="@dimen/image_color_margin"
+        app:image_color="@color/image_color_white"
+        app:image_selected_size="0.7"
+        app:image_unselected_size="0.6" />
+
+
+</com.zero_code.libEdImage.view.EditMosaicGroup>

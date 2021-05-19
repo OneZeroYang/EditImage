@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zero_code.libEdImage.view.EditColorGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cg_colors"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal"
+    android:checkedButton="@+id/cr_white"
+    android:gravity="center"
+    android:layout_weight="1"
+    android:visibility="gone"
+    android:orientation="horizontal"
+    android:padding="4dp"
+   >
+
+    <com.zero_code.libEdImage.view.EditColorRadio
+        android:id="@+id/cr_white"
+        android:layout_width="@dimen/image_color"
+        android:layout_height="@dimen/image_color"
+        android:layout_margin="@dimen/image_color_margin"
+        app:image_color="@color/image_color_red" />
+
+    <com.zero_code.libEdImage.view.EditColorRadio
+        android:layout_width="@dimen/image_color"
+        android:layout_height="@dimen/image_color"
+        android:layout_margin="@dimen/image_color_margin"
+        app:image_color="@color/image_color_yellow" />
+
+    <com.zero_code.libEdImage.view.EditColorRadio
+        android:layout_width="@dimen/image_color"
+        android:layout_height="@dimen/image_color"
+        android:layout_margin="@dimen/image_color_margin"
+        app:image_color="@color/image_color_green" />
+
+    <com.zero_code.libEdImage.view.EditColorRadio
+        android:layout_width="@dimen/image_color"
+        android:layout_height="@dimen/image_color"
+        android:layout_margin="@dimen/image_color_margin"
+        app:image_color="@color/image_color_cyan" />
+
+    <com.zero_code.libEdImage.view.EditColorRadio
+        android:layout_width="@dimen/image_color"
+        android:layout_height="@dimen/image_color"
+        android:layout_margin="@dimen/image_color_margin"
+        app:image_color="@color/image_color_purple" />
+
+    <com.zero_code.libEdImage.view.EditColorRadio
+        android:layout_width="@dimen/image_color"
+        android:layout_height="@dimen/image_color"
+        android:layout_margin="@dimen/image_color_margin"
+        app:image_color="@color/image_color_white" />
+
+    <com.zero_code.libEdImage.view.EditColorRadio
+        android:layout_width="@dimen/image_color"
+        android:layout_height="@dimen/image_color"
+        android:layout_margin="@dimen/image_color_margin"
+        app:image_color="@color/image_color_black" />
+
+</com.zero_code.libEdImage.view.EditColorGroup>

@@ -1,0 +1,3 @@
+include ':lib_edImage'
+include ':app'
+rootProject.name = "EditImage"

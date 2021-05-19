@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="image_color_primary">#FFFFFF</color>
+    <color name="image_color_accent">#4CA1FB</color>
+
+
+
+    <color name="COLOR_CORNER">#007EFA</color>
+    <color name="COLOR_FRAME">#007EFA</color>
+
+
+</resources>
