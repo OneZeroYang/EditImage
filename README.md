@@ -110,7 +110,7 @@ api
 ````
 /**
  * 开始编辑图片
- * @param src 资源 可以是本地图片  支持 url path
+ * @param src 资源 可以是本地图片  支持 uri path 不支持网络图片
  * @param onError 错误的回调
  */
 fun Activity.startEditImage(
