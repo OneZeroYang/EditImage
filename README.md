@@ -5,7 +5,7 @@
 🔥🔥🔥基于canvas画布，实现的一款图片轻量级编辑框架，目前支持涂鸦、马赛克、剪裁、文字功能
 
 
-![image](https://github.com/OneZeroYang/EdtiImageTools/blob/main/resource/051600390884_02b7403e8a39a37fa630e48cddd9909a.jpg)
+![image](https://github.com/OneZeroYang/EditImage/blob/main/resource/051600390884_02b7403e8a39a37fa630e48cddd9909a.jpg)
 
 
 
